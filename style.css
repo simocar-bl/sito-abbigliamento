@@ -146,6 +146,7 @@ footer {
 .promo {
   background: #ffe5e5;
   text-align: center;
+  margin-top: 3rem;
   margin-bottom: 5rem; /* <-- distacco extra sotto PROMOZIONI */
 }
 
@@ -180,5 +181,6 @@ footer {
     padding: 0.3rem 0.6rem;   /* più compatti */
   }
 }
+
 
 
