@@ -36,7 +36,7 @@ header nav a:hover {
   text-align: center;
   padding: 5rem 2rem;
   background: url("https://via.placeholder.com/1200x400") no-repeat center/cover;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .hero .btn {
@@ -108,4 +108,13 @@ footer {
 
 .categorie a:hover {
   text-decoration: underline;
+}
+
+.prodotti h3 {
+  margin-top: 3rem;   /* spazio sopra */
+  margin-bottom: 1rem; /* spazio sotto */
+}
+
+.prodotti .grid {
+  margin-bottom: 3rem; /* più spazio sotto ogni categoria */
 }
