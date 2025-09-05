@@ -118,3 +118,27 @@ footer {
 .prodotti .grid {
   margin-bottom: 3rem; /* più spazio sotto ogni categoria */
 }
+
+/* PROMOZIONI */
+.promo {
+  background: #ffe5e5; /* rosa chiaro */
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.promo h2 {
+  margin-bottom: 2rem;
+  color: #b30000; /* rosso acceso */
+}
+
+/* NOVITÀ */
+.novita {
+  background: #e5f0ff; /* azzurro chiaro */
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.novita h2 {
+  margin-bottom: 2rem;
+  color: #003366; /* blu scuro */
+}
