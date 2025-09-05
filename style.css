@@ -142,3 +142,29 @@ footer {
   margin-bottom: 2rem;
   color: #003366; /* blu scuro */
 }
+/* --- STILI PER MOBILE --- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;   /* mette logo e menù uno sotto l'altro */
+    align-items: center;      /* centra tutto */
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;        /* più piccolo il logo/titolo */
+    margin-bottom: 1rem;      /* distacco dal menù */
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;          /* permette di andare a capo se serve */
+    gap: 0.8rem;              /* spazio tra i link */
+    justify-content: center;  /* centra i link */
+  }
+
+  nav a {
+    font-size: 0.9rem;        /* link leggermente più piccoli */
+    padding: 0.3rem 0.6rem;   /* più compatti */
+  }
+}
+
