@@ -92,3 +92,20 @@ footer {
   background: black;
   color: white;
 }
+
+/* Menu categorie */
+.categorie {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.categorie a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: crimson;
+}
+
+.categorie a:hover {
+  text-decoration: underline;
+}
