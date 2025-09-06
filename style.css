@@ -36,13 +36,14 @@ header nav a:hover {
 .hero {
   text-align: center;
   padding: 5rem 2rem;
-  background: url("https://via.placeholder.com/1200x400") no-repeat center/cover;
+  background: linear-gradient(to right, #fdfdfd, #f7f7f7); /* sfondo più elegante */
   color: black;
+  position: relative;
 }
 
 .hero .btn {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding: 0.7rem 1.5rem;
   background: crimson;
   color: white;
@@ -53,6 +54,31 @@ header nav a:hover {
 .hero .btn:hover {
   background: darkred;
 }
+
+/* Logo nella hero */
+.hero-logo {
+  width: 150px;   /* regola la dimensione del logo */
+  margin: 1.5rem auto 0 auto;
+  display: block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05); /* piccolo zoom al passaggio */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* ombra leggera */
+}
+
+/* Effetto animazione logo */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Prodotti */
 .prodotti {
@@ -234,5 +260,6 @@ h1, h2, h3 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* ombra fissa su cellulare */
   }
 }
+
 
 
