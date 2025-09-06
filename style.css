@@ -198,3 +198,21 @@ footer {
 h1, h2, h3 {
   font-family: 'Georgia', serif;
 }
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.08);
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-logo img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
