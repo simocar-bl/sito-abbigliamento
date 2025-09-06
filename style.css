@@ -9,6 +9,7 @@
 body {
   line-height: 1.6;
   color: #333;
+  background: linear-gradient(to right, #f9f9f9, #f1f1f1);
 }
 
 /* Header */
@@ -36,7 +37,7 @@ header nav a:hover {
   text-align: center;
   padding: 5rem 2rem;
   background: url("https://via.placeholder.com/1200x400") no-repeat center/cover;
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
 .hero .btn {
@@ -64,19 +65,77 @@ header nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
+.prodotti h3 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Card */
 .card {
   background: white;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out, transform 0.2s;
 }
 
 .card img {
   max-width: 100%;
   border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Separator */
+.separator {
+  height: 5px;
+  background: linear-gradient(to right, red, blue);
+  margin: 4rem 0;
+  border-radius: 3px;
+}
+
+/* Promo */
+#promo {
+  background: #ffe5e5;
+  border: 2px solid #ff4d4d;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+#promo h2 {
+  margin-bottom: 2rem;
+  color: #b30000;
+}
+
+/* Novità */
+#novita {
+  background: #e5f0ff;
+  border: 2px solid #4d79ff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+#novita h2 {
+  margin-bottom: 2rem;
+  color: #003366;
 }
 
 /* Contatti */
@@ -110,134 +169,32 @@ footer {
   text-decoration: underline;
 }
 
-.prodotti h3 {
-  margin-top: 3rem;   /* spazio sopra */
-  margin-bottom: 1rem; /* spazio sotto */
-}
-
-.prodotti .grid {
-  margin-bottom: 3rem; /* più spazio sotto ogni categoria */
-}
-
-/* PROMOZIONI */
-.promo {
-  background: #ffe5e5; /* rosa chiaro */
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.promo h2 {
-  margin-bottom: 2rem;
-  color: #b30000; /* rosso acceso */
-}
-
-/* NOVITÀ */
-.novita {
-  background: #e5f0ff; /* azzurro chiaro */
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.novita h2 {
-  margin-bottom: 2rem;
-  color: #003366; /* blu scuro */
-}
-
-.promo {
-  background: #ffe5e5;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 5rem; /* <-- distacco extra sotto PROMOZIONI */
-}
-
-.novita {
-  background: #e5f0ff;
-  text-align: center;
-  margin-top: 5rem; /* <-- distacco extra sopra NOVITÀ */
-}
-
-/* --- STILI PER MOBILE --- */
+/* Mobile */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;   /* mette logo e menù uno sotto l'altro */
-    align-items: center;      /* centra tutto */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   header h1 {
-    font-size: 1.5rem;        /* più piccolo il logo/titolo */
-    margin-bottom: 1rem;      /* distacco dal menù */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   nav {
     display: flex;
-    flex-wrap: wrap;          /* permette di andare a capo se serve */
-    gap: 0.8rem;              /* spazio tra i link */
-    justify-content: center;  /* centra i link */
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
   }
 
   nav a {
-    font-size: 0.9rem;        /* link leggermente più piccoli */
-    padding: 0.3rem 0.6rem;   /* più compatti */
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
   }
-}
-
-.card {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 10px; /* angoli arrotondati */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* ombra leggera */
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: scale(1.03); /* effetto zoom leggero al passaggio del mouse */
-}
-
-section:nth-child(even) {
-  background: #f9f9f9;
 }
 
 h1, h2, h3 {
   font-family: 'Georgia', serif;
 }
-
-#promozioni {
-  background-color: #ffe5e5;   /* rosato */
-  border: 2px solid #ff4d4d;   /* bordo rosso */
-  padding: 2rem;
-  border-radius: 12px;
-  margin: 3rem 0;
-}
-
-#novita {
-  background-color: #e5f0ff;   /* azzurrino */
-  border: 2px solid #4d79ff;   /* bordo blu */
-  padding: 2rem;
-  border-radius: 12px;
-  margin: 3rem 0;
-}
-
-body {
-  background: linear-gradient(to right, #f9f9f9, #f1f1f1);
-}
-
-.separator {
-  height: 5px;
-  background: linear-gradient(to right, red, blue);
-  margin: 4rem 0;
-  border-radius: 3px;
-}
-
-.card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease-in-out;
-}
-
-.card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
