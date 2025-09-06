@@ -223,3 +223,10 @@ body {
   background: linear-gradient(to right, #f9f9f9, #f1f1f1);
 }
 
+.separator {
+  height: 5px;
+  background: linear-gradient(to right, red, blue);
+  margin: 4rem 0;
+  border-radius: 3px;
+}
+
