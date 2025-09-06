@@ -203,4 +203,23 @@ h1, h2, h3 {
   font-family: 'Georgia', serif;
 }
 
+#promozioni {
+  background-color: #ffe5e5;   /* rosato */
+  border: 2px solid #ff4d4d;   /* bordo rosso */
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 3rem 0;
+}
+
+#novita {
+  background-color: #e5f0ff;   /* azzurrino */
+  border: 2px solid #4d79ff;   /* bordo blu */
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 3rem 0;
+}
+
+body {
+  background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+}
 
