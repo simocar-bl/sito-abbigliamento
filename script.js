@@ -15,7 +15,4 @@ document.querySelectorAll(".slider").forEach(slider => {
   slider.querySelector(".next").addEventListener("click", () => {
     showSlide(index + 1);
   });
-
-  // autoplay
-  setInterval(() => showSlide(index + 1), 4000);
 });
