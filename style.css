@@ -39,7 +39,7 @@ header nav a:hover {
   align-items: center;
   min-height: 100vh; /* copre tutto lo schermo */
   text-align: center;
-  background: url("immagini/hero-bg.jpg") no-repeat center/cover;
+  background: url("immagini/imm_sfondo.png") no-repeat center/cover;
   color: white;
   position: relative;
   padding: 2rem;
@@ -286,6 +286,7 @@ h1, h2, h3 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* ombra fissa su cellulare */
   }
 }
+
 
 
 
