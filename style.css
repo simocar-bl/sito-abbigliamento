@@ -32,33 +32,39 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero */
+/* Hero fullscreen */
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* copre tutto lo schermo */
   text-align: center;
-  padding: 5rem 2rem;
-  background: linear-gradient(to right, #fdfdfd, #f7f7f7); /* sfondo più elegante */
-  color: black;
-  position: relative;
-}
-
-.hero .btn {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.7rem 1.5rem;
-  background: crimson;
+  background: url("immagini/hero-bg.jpg") no-repeat center/cover;
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
+  position: relative;
+  padding: 2rem;
 }
 
-.hero .btn:hover {
-  background: darkred;
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* overlay scuro per rendere leggibile il testo */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
 }
 
 /* Logo nella hero */
 .hero-logo {
-  width: 150px;   /* regola la dimensione del logo */
-  margin: 1.5rem auto 0 auto;
+  width: 180px;
+  margin: 0 auto 1.5rem auto;
   display: block;
   opacity: 0;
   transform: translateY(20px);
@@ -67,18 +73,38 @@ header nav a:hover {
 }
 
 .hero-logo:hover {
-  transform: scale(1.05); /* piccolo zoom al passaggio */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* ombra leggera */
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Effetto animazione logo */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Testo hero */
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Bottone hero */
+.hero .btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background: crimson;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: darkred;
+  transform: scale(1.05);
+}
 
 /* Prodotti */
 .prodotti {
@@ -260,6 +286,7 @@ h1, h2, h3 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* ombra fissa su cellulare */
   }
 }
+
 
 
 
