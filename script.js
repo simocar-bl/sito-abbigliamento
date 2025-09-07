@@ -16,3 +16,16 @@ document.querySelectorAll(".slider").forEach(slider => {
     showSlide(index + 1);
   });
 });
+
+// Animazione cards quando entrano nello schermo
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll(".card").forEach(card => {
+  observer.observe(card);
+});
