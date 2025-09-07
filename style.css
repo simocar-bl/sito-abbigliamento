@@ -322,23 +322,24 @@ h1, h2, h3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: crimson;
+  background: rgba(0, 0, 0, 0.4); /* sfondo leggero semitrasparente */
   border: none;
   color: white;
-  font-size: 1.5rem;
-  padding: 0.8rem;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
-  border-radius: 50%;
-  transition: background 0.3s ease, transform 0.2s;
+  border-radius: 4px; /* non cerchio, più quadrato morbido */
+  transition: background 0.3s ease;
 }
 
 .slider button:hover {
-  background: darkred;
-  transform: translateY(-50%) scale(1.1);
+  background: rgba(0, 0, 0, 0.7);
 }
 
-.slider .prev { left: 15px; }
-.slider .next { right: 15px; }
+.slider .prev { left: 10px; }
+.slider .next { right: 10px; }
+
+
 
 
 
