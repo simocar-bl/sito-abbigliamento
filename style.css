@@ -32,14 +32,14 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero fullscreen */
+/* HERO */
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* copre tutto lo schermo */
+  min-height: 100vh;
   text-align: center;
-  background: url("imm_sfondo.png") no-repeat center/cover;
+  background: url("immagini/imm_sfondo.jpeg") no-repeat center/cover;
   color: white;
   position: relative;
   padding: 2rem;
@@ -52,7 +52,7 @@ header nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* overlay scuro per rendere leggibile il testo */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .hero-content {
@@ -61,7 +61,7 @@ header nav a:hover {
   max-width: 800px;
 }
 
-/* Logo nella hero */
+/* Logo */
 .hero-logo {
   width: 180px;
   margin: 0 auto 1.5rem auto;
@@ -77,12 +77,6 @@ header nav a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.hero-logo {
-  position: relative;
-  z-index: 2; /* così sta sopra l’overlay */
-}
-
-
 /* Testo hero */
 .hero h2 {
   font-size: 2.5rem;
@@ -95,7 +89,6 @@ header nav a:hover {
   margin-bottom: 2rem;
 }
 
-/* Bottone hero */
 .hero .btn {
   display: inline-block;
   padding: 0.9rem 2rem;
@@ -112,17 +105,24 @@ header nav a:hover {
   transform: scale(1.05);
 }
 
-/* Prodotti */
-.prodotti {
+/* ========================= */
+/* SEZIONI SUCCESSIVE CON PATTERN */
+/* ========================= */
+.prodotti, #promo, #novita {
+  background: url("immagini/pattern.jpeg") repeat;
+  background-size: 300px;
   padding: 3rem 2rem;
-  background: #f4f4f4;
 }
 
-.prodotti {
-  background: url("pattern.jpeg") repeat;
-  background-size: cover;
+/* Card leggibili sopra il pattern */
+.prodotti .card, #promo .card, #novita .card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Griglie */
 .prodotti .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -136,13 +136,8 @@ header nav a:hover {
   margin-bottom: 1rem;
 }
 
-/* Card */
+/* Card base */
 .card {
-  background: white;
-  padding: 1rem;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: center;
   opacity: 0;
   transform: translateY(20px);
@@ -152,10 +147,11 @@ header nav a:hover {
 .card img {
   max-width: 100%;
   border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-.card:hover {
-  transform: scale(1.03);
+.card img:hover {
+  transform: scale(1.08);
 }
 
 .card.visible {
@@ -169,36 +165,6 @@ header nav a:hover {
   background: linear-gradient(to right, red, blue);
   margin: 4rem 0;
   border-radius: 3px;
-}
-
-/* Promo */
-#promo {
-  background: #ffe5e5;
-  border: 2px solid #ff4d4d;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  margin: 3rem 0;
-  text-align: center;
-}
-
-#promo h2 {
-  margin-bottom: 2rem;
-  color: #b30000;
-}
-
-/* Novità */
-#novita {
-  background: #e5f0ff;
-  border: 2px solid #4d79ff;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  margin: 3rem 0;
-  text-align: center;
-}
-
-#novita h2 {
-  margin-bottom: 2rem;
-  color: #003366;
 }
 
 /* Contatti */
@@ -256,49 +222,29 @@ footer {
     font-size: 0.9rem;
     padding: 0.3rem 0.6rem;
   }
+
+  .prodotto img {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
 }
 
+/* Titoli eleganti */
 h1, h2, h3 {
   font-family: 'Georgia', serif;
 }
 
-.card img {
-  transition: transform 0.3s ease;
-}
-
-.card img:hover {
-  transform: scale(1.08);
-}
-
-.hero-content {
-  text-align: center;
-}
-
-.hero-logo img {
-  max-width: 150px;
-  margin-bottom: 1rem;
-}
-
-/* Effetto animazione immagini prodotti */
+/* Animazioni prodotti */
 .prodotto img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 8px; /* angoli leggermente arrotondati */
+  border-radius: 8px;
 }
 
-/* Hover (funziona da PC con mouse) */
 .prodotto img:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* ombra forte al passaggio */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
 }
 
-/* Mobile (sempre con ombra leggera) */
-@media (max-width: 768px) {
-  .prodotto img {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* ombra fissa su cellulare */
-  }
-}
-
-/* Slider base */
+/* Slider */
 .slider {
   position: relative;
   overflow: hidden;
@@ -327,13 +273,13 @@ h1, h2, h3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.4); /* sfondo leggero semitrasparente */
+  background: rgba(0, 0, 0, 0.4);
   border: none;
   color: white;
   font-size: 2rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  border-radius: 4px; /* non cerchio, più quadrato morbido */
+  border-radius: 4px;
   transition: background 0.3s ease;
 }
 
@@ -343,16 +289,3 @@ h1, h2, h3 {
 
 .slider .prev { left: 10px; }
 .slider .next { right: 10px; }
-
-
-
-
-
-
-
-
-
-
-
-
-
