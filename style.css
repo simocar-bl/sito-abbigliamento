@@ -118,6 +118,11 @@ header nav a:hover {
   background: #f4f4f4;
 }
 
+.prodotti {
+  background: url("pattern.jpeg") repeat;
+  background-size: cover;
+}
+
 .prodotti .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -338,6 +343,7 @@ h1, h2, h3 {
 
 .slider .prev { left: 10px; }
 .slider .next { right: 10px; }
+
 
 
 
