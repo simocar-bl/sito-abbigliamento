@@ -287,6 +287,52 @@ h1, h2, h3 {
   }
 }
 
+/* Slider base */
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.slide img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Pulsanti slider */
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider .prev { left: 10px; }
+.slider .next { right: 10px; }
+
+.slider button:hover {
+  background: rgba(0,0,0,0.9);
+}
+
+
 
 
 
