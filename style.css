@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
 }
 
 body {
   line-height: 1.6;
   color: #333;
-  background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+  background: url("immagini/pattern.png") repeat;
+  background-size: 200px;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Header */
@@ -39,7 +40,7 @@ header nav a:hover {
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  background: url("immagini/imm_sfondo.jpeg") no-repeat center/cover;
+  background: #222 url("immagini/imm_sfondo.jpeg") no-repeat center/cover;
   color: white;
   position: relative;
   padding: 2rem;
@@ -82,6 +83,7 @@ header nav a:hover {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
+  font-family: 'Playfair Display', serif;
 }
 
 .hero p {
@@ -105,150 +107,33 @@ header nav a:hover {
   transform: scale(1.05);
 }
 
-/* ========================= */
-/* SEZIONI SUCCESSIVE CON PATTERN */
-/* ========================= */
-.prodotti, #promo, #novita {
-  background: url("immagini/pattern.jpeg") repeat;
-  background-size: 300px;
+/* PROMO E NOVITA */
+#promo {
+  background: linear-gradient(135deg, #ffefef, #ffd6d6);
+  border: 3px solid crimson;
+  border-radius: 15px;
   padding: 3rem 2rem;
+  box-shadow: 0 6px 18px rgba(255, 0, 0, 0.2);
 }
 
-/* Card leggibili sopra il pattern */
-.prodotti .card, #promo .card, #novita .card {
-  background: rgba(255,255,255,0.9);
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* Griglie */
-.prodotti .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-.prodotti h3 {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-/* Card base */
-.card {
-  text-align: center;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease-in-out, transform 0.2s;
-}
-
-.card img {
-  max-width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.card img:hover {
-  transform: scale(1.08);
-}
-
-.card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Separator */
-.separator {
-  height: 5px;
-  background: linear-gradient(to right, red, blue);
-  margin: 4rem 0;
-  border-radius: 3px;
-}
-
-/* Contatti */
-.contatti {
+#novita {
+  background: linear-gradient(135deg, #e8faff, #c7f1ff);
+  border: 3px solid dodgerblue;
+  border-radius: 15px;
   padding: 3rem 2rem;
-  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.2);
 }
 
-/* Footer */
-footer {
-  padding: 1rem;
-  text-align: center;
-  background: black;
-  color: white;
-}
-
-/* Menu categorie */
-.categorie {
-  text-align: center;
-  margin: 1.5rem 0;
-}
-
-.categorie a {
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: bold;
+#promo h2 {
   color: crimson;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.categorie a:hover {
-  text-decoration: underline;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    justify-content: center;
-  }
-
-  nav a {
-    font-size: 0.9rem;
-    padding: 0.3rem 0.6rem;
-  }
-
-  .prodotto img {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-}
-
-/* Titoli eleganti */
-h1, h2, h3, header h1, .hero h2 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-/* Testo normale */
-body, p, nav a, .card, .btn, .categorie a {
-  font-family: 'Raleway', sans-serif;
-}
-
-/* Animazioni prodotti */
-.prodotto img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 8px;
-}
-
-.prodotto img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+#novita h2 {
+  color: dodgerblue;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Slider */
@@ -297,4 +182,17 @@ body, p, nav a, .card, .btn, .categorie a {
 .slider .prev { left: 10px; }
 .slider .next { right: 10px; }
 
+/* Contatti con stacco */
+#contatti {
+  margin-top: 6rem;
+  padding: 3rem 2rem;
+  text-align: center;
+}
 
+/* Footer */
+footer {
+  padding: 1rem;
+  text-align: center;
+  background: black;
+  color: white;
+}
