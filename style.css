@@ -229,8 +229,15 @@ footer {
 }
 
 /* Titoli eleganti */
-h1, h2, h3 {
-  font-family: 'Georgia', serif;
+h1, h2, h3, header h1, .hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Testo normale */
+body, p, nav a, .card, .btn, .categorie a {
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Animazioni prodotti */
@@ -289,4 +296,5 @@ h1, h2, h3 {
 
 .slider .prev { left: 10px; }
 .slider .next { right: 10px; }
+
 
