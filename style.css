@@ -22,14 +22,20 @@ header {
   color: white;
 }
 
+header h1 {
+  color: #ffffff; /* logo Gabry Moda bianco pieno */
+}
+
 header nav a {
   margin-left: 1rem;
-  color: white;
+  color: #f5f5f5; /* più chiaro */
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 header nav a:hover {
-  text-decoration: underline;
+  color: crimson; /* cambia colore al passaggio */
 }
 
 /* HERO */
@@ -43,6 +49,7 @@ header nav a:hover {
   background: url("imm_sfondo.jpeg") no-repeat center/cover;
   color: white;
   padding: 8rem 2rem;
+  position: relative;
 }
 
 .hero::after {
@@ -70,11 +77,15 @@ header nav a:hover {
   transform: translateY(20px);
   animation: fadeInUp 1.2s ease forwards;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;         /* sfondo bianco dietro al logo */
+  padding: 10px;             /* spazio interno */
+  border-radius: 12px;       /* angoli arrotondati */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* ombra */
 }
 
 .hero-logo:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
 }
 
 /* Testo hero */
@@ -112,6 +123,26 @@ header nav a:hover {
   background: url("pattern.jpeg") repeat;
   background-size: 300px;
   padding: 3rem 2rem;
+}
+
+/* Titolo elegante sezione prodotti */
+.prodotti h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 2rem 0;
+  font-family: 'Playfair Display', serif;
+  color: #222;
+  position: relative;
+}
+
+.prodotti h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: crimson;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
 }
 
 /* Card leggibili sopra il pattern */
@@ -307,7 +338,3 @@ body, p, nav a, .card, .btn, .categorie a {
     transform: translateY(0);
   }
 }
-
-
-
-
