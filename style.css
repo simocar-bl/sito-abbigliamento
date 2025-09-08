@@ -338,3 +338,27 @@ body, p, nav a, .card, .btn, .categorie a {
     transform: translateY(0);
   }
 }
+
+.categorie {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.categorie a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: white;
+  border: 2px solid crimson;
+  border-radius: 50px;
+  color: crimson;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.categorie a:hover {
+  background: crimson;
+  color: white;
+}
+
