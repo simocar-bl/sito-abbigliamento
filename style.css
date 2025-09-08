@@ -362,3 +362,94 @@ body, p, nav a, .card, .btn, .categorie a {
   color: white;
 }
 
+/* ==================== */
+/* VERSIONE MOBILE */
+/* ==================== */
+@media (max-width: 768px) {
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 4rem 1.2rem;
+    min-height: auto;
+  }
+
+  .hero-logo {
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* CATEGORIE */
+  .categorie {
+    margin: 1.2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .categorie a {
+    font-size: 0.85rem;
+  }
+
+  /* GRID PRODOTTI */
+  .prodotti .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* SLIDER */
+  .slider {
+    max-width: 90%;
+  }
+
+  .slide img {
+    max-width: 100%;
+  }
+
+  .slider button {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* CONTATTI */
+  .contatti {
+    font-size: 0.9rem;
+  }
+}
+
