@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vetrina Abbigliamento</title>
+
+  <!-- Font eleganti -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stile -->
   <link rel="stylesheet" href="style.css">
-   <!-- Font moderno -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- HEADER -->
@@ -22,21 +24,20 @@
     </nav>
   </header>
 
-<!-- SEZIONE HOME -->
-<section id="home" class="hero">
-  <div class="hero-content">
-    <!-- LOGO -->
-    <img src="logo.jpeg" alt="Logo Gabry Moda" class="hero-logo">
+  <!-- SEZIONE HOME -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <!-- LOGO -->
+      <img src="immagini/logo.jpeg" alt="Logo Gabry Moda" class="hero-logo">
 
-    <!-- TESTO -->
-    <h2>Scopri la nostra nuova collezione</h2>
-    <p>Vestiti unici, qualità garantita.</p>
+      <!-- TESTO -->
+      <h2>Scopri la nostra nuova collezione</h2>
+      <p>Vestiti unici, qualità garantita.</p>
 
-    <!-- BOTTONE -->
-    <a href="#prodotti" class="btn">Guarda i prodotti</a>
-  </div>
-</section>
-
+      <!-- BOTTONE -->
+      <a href="#prodotti" class="btn">Guarda i prodotti</a>
+    </div>
+  </section>
 
   <!-- SEZIONE PRODOTTI -->
   <section id="prodotti" class="prodotti">
@@ -55,186 +56,110 @@
 
     <div class="separator"></div>
 
-  <!-- PROMOZIONI -->
-<section id="promo" class="promo">
-  <h2>🔥 Promozioni</h2>
-  <div class="slider">
-    <div class="slides">
-      <div class="slide">
-        <img src="https://via.placeholder.com/300x400" alt="Promo 1">
-        <h4>Maglietta in promozione</h4>
-        <p><s>€20,00</s> €15,00</p>
+    <!-- PROMOZIONI -->
+    <section id="promo" class="promo">
+      <h2>🔥 Promozioni</h2>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="https://via.placeholder.com/300x400" alt="Promo 1">
+            <h4>Maglietta in promozione</h4>
+            <p><s>€20,00</s> €15,00</p>
+          </div>
+          <div class="slide">
+            <img src="https://via.placeholder.com/300x400" alt="Promo 2">
+            <h4>Pantalone in promozione</h4>
+            <p><s>€40,00</s> €29,99</p>
+          </div>
+          <div class="slide">
+            <img src="https://via.placeholder.com/300x400" alt="Promo 3">
+            <h4>Giacca in promozione</h4>
+            <p><s>€100,00</s> €79,99</p>
+          </div>
+        </div>
+        <!-- Pulsanti -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
       </div>
-      <div class="slide">
-        <img src="https://via.placeholder.com/300x400" alt="Promo 2">
-        <h4>Pantalone in promozione</h4>
-        <p><s>€40,00</s> €29,99</p>
+    </section>
+
+    <!-- NOVITÀ -->
+    <section id="novita" class="novita">
+      <h2>🆕 Novità</h2>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="https://via.placeholder.com/300x400" alt="Novità 1">
+            <h4>Nuova Giacca</h4>
+            <p>€95,00</p>
+          </div>
+          <div class="slide">
+            <img src="https://via.placeholder.com/300x400" alt="Novità 2">
+            <h4>Nuovo Vestito Elegante</h4>
+            <p>€120,00</p>
+          </div>
+          <div class="slide">
+            <img src="https://via.placeholder.com/300x400" alt="Novità 3">
+            <h4>Nuova Felpa</h4>
+            <p>€59,00</p>
+          </div>
+        </div>
+        <!-- Pulsanti -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
       </div>
-      <div class="slide">
-        <img src="https://via.placeholder.com/300x400" alt="Promo 3">
-        <h4>Giacca in promozione</h4>
-        <p><s>€100,00</s> €79,99</p>
+    </section>
+
+    <!-- MAGLIE -->
+    <section id="maglie" class="categoria">
+      <h3>Maglie</h3>
+      <div class="slider">
+        <button class="prev">&#10094;</button>
+        <div class="slides">
+          <div class="slide"><img src="immagini/maglia1.jpeg" alt="Maglia 1"></div>
+          <div class="slide"><img src="immagini/maglia2.jpeg" alt="Maglia 2"></div>
+          <div class="slide"><img src="immagini/maglia3.jpeg" alt="Maglia 3"></div>
+        </div>
+        <button class="next">&#10095;</button>
       </div>
-    </div>
-    <!-- Pulsanti -->
-    <button class="prev"><span>&lt;</span></button>
-    <button class="next"><span>&gt;</span></button>
-  </div>
-</section>
+    </section>
 
-<!-- NOVITÀ -->
-<section id="novita" class="novita">
-  <h2>🆕 Novità</h2>
-  <div class="slider">
-    <div class="slides">
-      <div class="slide">
-        <img src="https://via.placeholder.com/300x400" alt="Novità 1">
-        <h4>Nuova Giacca</h4>
-        <p>€95,00</p>
+    <!-- PANTALONI -->
+    <section id="pantaloni" class="categoria">
+      <h3>Pantaloni</h3>
+      <div class="slider">
+        <button class="prev">&#10094;</button>
+        <div class="slides">
+          <div class="slide"><img src="immagini/pantalone1.jpeg" alt="Pantalone 1"></div>
+          <div class="slide"><img src="immagini/pantalone2.jpeg" alt="Pantalone 2"></div>
+          <div class="slide"><img src="immagini/pantalone3.jpeg" alt="Pantalone 3"></div>
+        </div>
+        <button class="next">&#10095;</button>
       </div>
-      <div class="slide">
-        <img src="https://via.placeholder.com/300x400" alt="Novità 2">
-        <h4>Nuovo Vestito Elegante</h4>
-        <p>€120,00</p>
+    </section>
+
+    <!-- GIACCHE -->
+    <section id="giacche" class="categoria">
+      <h3>Giacche</h3>
+      <div class="slider">
+        <button class="prev">&#10094;</button>
+        <div class="slides">
+          <div class="slide"><img src="immagini/giacca1.jpeg" alt="Giacca 1"></div>
+          <div class="slide"><img src="immagini/giacca2.jpeg" alt="Giacca 2"></div>
+          <div class="slide"><img src="immagini/giacca3.jpeg" alt="Giacca 3"></div>
+        </div>
+        <button class="next">&#10095;</button>
       </div>
-      <div class="slide">
-        <img src="https://via.placeholder.com/300x400" alt="Novità 3">
-        <h4>Nuova Felpa</h4>
-        <p>€59,00</p>
-      </div>
-    </div>
-    <!-- Pulsanti -->
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
-  </div>
-</section>
+    </section>
 
-  <!-- MAGLIE -->
-<section id="maglie" class="categoria">
-  <h3>Maglie</h3>
-  <div class="slider">
-    <button class="prev">&#10094;</button>
-    <div class="slides">
-      <div class="slide"><img src="immagini/maglia1.jpeg" alt="Maglia 1"></div>
-      <div class="slide"><img src="immagini/maglia2.jpeg" alt="Maglia 2"></div>
-      <div class="slide"><img src="immagini/maglia3.jpeg" alt="Maglia 3"></div>
-    </div>
-    <button class="next">&#10095;</button>
-  </div>
-</section>
-
-<!-- PANTALONI -->
-<section id="pantaloni" class="categoria">
-  <h3>Pantaloni</h3>
-  <div class="slider">
-    <button class="prev">&#10094;</button>
-    <div class="slides">
-      <div class="slide"><img src="immagini/pantalone1.jpeg" alt="Pantalone 1"></div>
-      <div class="slide"><img src="immagini/pantalone2.jpeg" alt="Pantalone 2"></div>
-      <div class="slide"><img src="immagini/pantalone3.jpeg" alt="Pantalone 3"></div>
-    </div>
-    <button class="next">&#10095;</button>
-  </div>
-</section>
-
-<!-- GIACCHE -->
-<section id="giacche" class="categoria">
-  <h3>Giacche</h3>
-  <div class="slider">
-    <button class="prev">&#10094;</button>
-    <div class="slides">
-      <div class="slide"><img src="immagini/giacca1.jpeg" alt="Giacca 1"></div>
-      <div class="slide"><img src="immagini/giacca2.jpeg" alt="Giacca 2"></div>
-      <div class="slide"><img src="immagini/giacca3.jpeg" alt="Giacca 3"></div>
-    </div>
-    <button class="next">&#10095;</button>
-  </div>
-</section>
-
-<!-- CARDIGAN -->
-<section id="cardigan" class="categoria">
-  <h3>Cardigan</h3>
-  <div class="slider">
-    <button class="prev">&#10094;</button>
-    <div class="slides">
-      <div class="slide"><img src="immagini/cardigan1.jpeg" alt="Cardigan 1"></div>
-      <div class="slide"><img src="immagini/cardigan2.jpeg" alt="Cardigan 2"></div>
-      <div class="slide"><img src="immagini/cardigan3.jpeg" alt="Cardigan 3"></div>
-    </div>
-    <button class="next">&#10095;</button>
-  </div>
-</section>
-
-<!-- JEANS -->
-<section id="jeans" class="categoria">
-  <h3>Jeans</h3>
-  <div class="slider">
-    <button class="prev">&#10094;</button>
-    <div class="slides">
-      <div class="slide"><img src="immagini/jeans1.jpeg" alt="Jeans 1"></div>
-      <div class="slide"><img src="immagini/jeans2.jpeg" alt="Jeans 2"></div>
-      <div class="slide"><img src="immagini/jeans3.jpeg" alt="Jeans 3"></div>
-    </div>
-    <button class="next">&#10095;</button>
-  </div>
-</section>
-
-<!-- FELPE -->
-<section id="felpe" class="categoria">
-  <h3>Felpe</h3>
-  <div class="slider">
-    <button class="prev">&#10094;</button>
-    <div class="slides">
-      <div class="slide"><img src="immagini/felpa1.jpeg" alt="Felpa 1"></div>
-      <div class="slide"><img src="immagini/felpa2.jpeg" alt="Felpa 2"></div>
-      <div class="slide"><img src="immagini/felpa3.jpeg" alt="Felpa 3"></div>
-    </div>
-    <button class="next">&#10095;</button>
-  </div>
-</section>
-
-<!-- VESTITI -->
-<section id="vestiti" class="categoria">
-  <h3>Vestiti</h3>
-  <div class="slider">
-    <button class="prev">&#10094;</button>
-    <div class="slides">
-      <div class="slide"><img src="immagini/vestito1.jpeg" alt="Vestito 1"></div>
-      <div class="slide"><img src="immagini/vestito2.jpeg" alt="Vestito 2"></div>
-      <div class="slide"><img src="immagini/vestito3.jpeg" alt="Vestito 3"></div>
-    </div>
-    <button class="next">&#10095;</button>
-  </div>
-</section>
-
-
-  <!-- SEZIONE CONTATTI -->
-  <section id="contatti" class="contatti">
-    <h2>Contattaci</h2>
-    <p>Telefono: +39 333 640 9326</p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Collezione Moda, Gabry Moda - Tutti i diritti riservati</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- CARDIGAN -->
+    <section id="cardigan" class="categoria">
+      <h3>Cardigan</h3>
+      <div class="slider">
+        <button class="prev">&#10094;</button>
+        <div class="slides">
+          <div class="slide"><img src="immagini/cardigan1.jpeg" alt="Cardigan 1"></div>
+          <div class="slide"><img src="immagini/cardigan2.jpeg" alt="Cardigan 2"></div>
+          <div class="slide"><img src="immagini/cardigan3.jpeg" alt="Cardigan 3"></div>
+        </div>
+        <button class="next">&#10095;</butt
