@@ -43,18 +43,20 @@
   <section id="prodotti" class="prodotti">
 
     <!-- MENU CATEGORIE -->
-  <section id="categorie" class="categorie-nav">
-    <h2>I nostri vestiti</h2>
-    <div class="categorie-links">
-      <a href="#maglie">Maglie</a>
-      <a href="#pantaloni">Pantaloni</a>
-      <a href="#jeans">Jeans</a>
-      <a href="#vestiti">Vestiti</a>
-      <a href="#felpe">Felpe</a>
-      <a href="#giacche">Giacche</a>
-      <a href="#cardigan">Cardigan</a>
-    </div>
-  </section>
+<!-- Categorie con dropdown -->
+<div class="categorie">
+  <label for="categorie-select">Seleziona una categoria:</label>
+  <select id="categorie-select" onchange="location.href=this.value">
+    <option value="#maglie">Maglie</option>
+    <option value="#pantaloni">Pantaloni</option>
+    <option value="#giacche">Giacche</option>
+    <option value="#cardigan">Cardigan</option>
+    <option value="#jeans">Jeans</option>
+    <option value="#felpe">Felpe</option>
+    <option value="#vestiti">Vestiti</option>
+  </select>
+</div>
+
 
 
     <!-- PROMOZIONI -->
@@ -224,6 +226,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
