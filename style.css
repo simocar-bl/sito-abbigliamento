@@ -120,7 +120,7 @@ header nav a:hover {
 /* SEZIONI SUCCESSIVE CON PATTERN */
 /* ========================= */
 .prodotti, #promo, #novita {
-  background: url("pattern.jpeg") repeat;
+  background: url("pattern2.jpeg") repeat;
   background-size: 300px;
   padding: 3rem 2rem;
   color: white; /* testo bianco sopra pattern scuro */
@@ -320,3 +320,4 @@ footer {
   .slider .prev { left: 5px; }
   .slider .next { right: 5px; }
 }
+
