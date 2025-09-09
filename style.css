@@ -78,9 +78,9 @@ header nav a:hover {
   animation: fadeInUp 1.2s ease forwards;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: white;
-  padding: 10px;
+  padding: 0;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  box-shadow: none;
 }
 
 .hero-logo:hover {
@@ -219,6 +219,9 @@ footer {
 .categorie {
   text-align: center;
   margin: 2rem 0;
+  padding: 3rem 2rem;
+  border-bottom: 2px solid rgba(255,255,255,0.15); /* linea chiara semi-trasparente */
+  margin-bottom: 2rem;
 }
 
 .categorie a {
@@ -241,6 +244,11 @@ footer {
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+}
+
+.categorie select {
+  font-size: 1.3rem;  /* più grande */
+  padding: 1rem 1.5rem; /* più spazio interno */
 }
 
 /* Slider */
@@ -320,4 +328,5 @@ footer {
   .slider .prev { left: 5px; }
   .slider .next { right: 5px; }
 }
+
 
