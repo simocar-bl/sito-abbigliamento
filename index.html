@@ -44,19 +44,55 @@
 
     <!-- MENU CATEGORIE -->
 <!-- Categorie con dropdown -->
-<div class="categorie">
-  <label for="categorie-select">Seleziona una categoria:</label>
-  <select id="categorie-select" onchange="location.href=this.value">
-    <option value="#maglie">Maglie</option>
-    <option value="#pantaloni">Pantaloni</option>
-    <option value="#giacche">Giacche</option>
-    <option value="#cardigan">Cardigan</option>
-    <option value="#jeans">Jeans</option>
-    <option value="#felpe">Felpe</option>
-    <option value="#vestiti">Vestiti</option>
+<section class="categorie">
+  <h2>Seleziona una categoria</h2>
+  <select id="filtroCategorie">
+    <option value="tutte">Tutte</option>
+    <option value="maglie">Maglie</option>
+    <option value="pantaloni">Pantaloni</option>
+    <option value="jeans">Jeans</option>
+    <option value="felpe">Felpe</option>
+    <option value="giacche">Giacche</option>
+    <option value="cardigan">Cardigan</option>
+    <option value="vestiti">Vestiti</option>
   </select>
-</div>
+</section>
 
+<!-- Sezioni categoria -->
+<section class="categoria" id="maglie">
+  <h3>Maglie</h3>
+  <div class="prodotti">Qui metti le immagini delle maglie</div>
+</section>
+
+<section class="categoria" id="pantaloni">
+  <h3>Pantaloni</h3>
+  <div class="prodotti">Qui metti le immagini dei pantaloni</div>
+</section>
+
+<section class="categoria" id="jeans">
+  <h3>Jeans</h3>
+  <div class="prodotti">Qui metti le immagini dei jeans</div>
+</section>
+
+<section class="categoria" id="felpe">
+  <h3>Felpe</h3>
+  <div class="prodotti">Qui metti le immagini delle felpe</div>
+</section>
+
+<section class="categoria" id="giacche">
+  <h3>Giacche</h3>
+  <div class="prodotti">Qui metti le immagini delle giacche</div>
+</section>
+
+<section class="categoria" id="cardigan">
+  <h3>Cardigan</h3>
+  <div class="prodotti">Qui metti le immagini dei cardigan</div>
+</section>
+
+<section class="categoria" id="vestiti">
+  <h3>Vestiti</h3>
+  <div class="prodotti">Qui metti le immagini dei vestiti</div>
+</section>
 
 
     <!-- PROMOZIONI -->
@@ -226,6 +262,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
