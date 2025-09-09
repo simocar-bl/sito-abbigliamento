@@ -23,19 +23,19 @@ header {
 }
 
 header h1 {
-  color: #ffffff; /* logo Gabry Moda bianco pieno */
+  color: #ffffff;
 }
 
 header nav a {
   margin-left: 1rem;
-  color: #f5f5f5; /* più chiaro */
+  color: #f5f5f5;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 header nav a:hover {
-  color: crimson; /* cambia colore al passaggio */
+  color: crimson;
 }
 
 /* HERO */
@@ -77,10 +77,10 @@ header nav a:hover {
   transform: translateY(20px);
   animation: fadeInUp 1.2s ease forwards;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: white;         /* sfondo bianco dietro al logo */
-  padding: 10px;             /* spazio interno */
-  border-radius: 12px;       /* angoli arrotondati */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* ombra */
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 .hero-logo:hover {
@@ -123,19 +123,20 @@ header nav a:hover {
   background: url("pattern.jpeg") repeat;
   background-size: 300px;
   padding: 3rem 2rem;
+  color: white; /* testo bianco sopra pattern scuro */
 }
 
 /* Titolo elegante sezione prodotti */
-.prodotti h2 {
+.prodotti h2, #promo h2, #novita h2 {
   font-size: 2.2rem;
   text-align: center;
   margin: 2rem 0;
   font-family: 'Playfair Display', serif;
-  color: #222;
+  color: white; /* bianco sopra pattern */
   position: relative;
 }
 
-.prodotti h2::after {
+.prodotti h2::after, #promo h2::after, #novita h2::after {
   content: "";
   display: block;
   width: 60px;
@@ -147,10 +148,11 @@ header nav a:hover {
 
 /* Card leggibili sopra il pattern */
 .prodotti .card, #promo .card, #novita .card {
-  background: rgba(255,255,255,0.9);
+  background: rgba(0,0,0,0.7); /* scuro trasparente */
+  color: white; /* testo bianco leggibile */
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 /* Griglie */
@@ -162,9 +164,10 @@ header nav a:hover {
   margin-bottom: 3rem;
 }
 
-.prodotti h3 {
+.prodotti h3, #promo h3, #novita h3 {
   margin-top: 3rem;
   margin-bottom: 1rem;
+  color: white;
 }
 
 /* Card base */
@@ -222,114 +225,22 @@ footer {
   display: inline-block;
   margin: 0.5rem 0.8rem;
   padding: 0.6rem 1.4rem;
-  background: white;
-  color: black;
+  background: black; /* nero elegante */
+  color: white;
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
   border-radius: 30px;
   border: 2px solid crimson;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
 .categorie a:hover {
   background: crimson;
   color: white;
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-}
-
-.categoria {
-  padding: 4rem 2rem;  /* spazio sopra e sotto */
-  border-bottom: 1px solid #ddd; /* linea di separazione elegante */
-  text-align: center;
-}
-
-.categoria h3 {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  font-family: 'Playfair Display', serif;
-}
-
-.categorie {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.categorie label {
-  font-weight: bold;
-  font-family: 'Playfair Display', serif;
-  margin-right: 0.5rem;
-}
-
-.categorie select {
-  padding: 0.8rem 1.2rem;
-  border: 2px solid crimson;
-  border-radius: 8px;
-  background: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.categorie select:hover {
-  border-color: darkred;
-}
-
-
-/* Mobile */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    justify-content: center;
-  }
-
-  nav a {
-    font-size: 0.9rem;
-    padding: 0.3rem 0.6rem;
-  }
-
-  .prodotto img {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-}
-
-/* Titoli eleganti */
-h1, h2, h3, header h1, .hero h2 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-/* Testo normale */
-body, p, nav a, .card, .btn, .categorie a {
-  font-family: 'Raleway', sans-serif;
-}
-
-/* Animazioni prodotti */
-.prodotto img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 8px;
-}
-
-.prodotto img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.35);
 }
 
 /* Slider */
@@ -361,7 +272,7 @@ body, p, nav a, .card, .btn, .categorie a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   border: none;
   color: white;
   font-size: 2rem;
@@ -372,51 +283,16 @@ body, p, nav a, .card, .btn, .categorie a {
 }
 
 .slider button:hover {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .slider .prev { left: 10px; }
 .slider .next { right: 10px; }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.categorie {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.categorie a {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  background: white;
-  border: 2px solid crimson;
-  border-radius: 50px;
-  color: crimson;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.categorie a:hover {
-  background: crimson;
-  color: white;
-}
-
 /* ==================== */
 /* VERSIONE MOBILE */
 /* ==================== */
 @media (max-width: 768px) {
-  /* Header */
   header {
     flex-direction: column;
     align-items: center;
@@ -440,93 +316,7 @@ body, p, nav a, .card, .btn, .categorie a {
     padding: 0.4rem 0.7rem;
   }
 
-  /* Categorie */
-  .categorie {
-    margin: 2rem 0;
-  }
-
-  .categorie select {
-    width: 90%;
-    max-width: 300px;
-    font-size: 1.1rem;
-    padding: 0.8rem 1rem;
-  }
-
-  /* Immagini prodotti */
-  .prodotto img {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    width: 100%;
-  }
-
-  /* Slider - frecce più distanziate */
-  .slider .prev { left: -25px; }
-  .slider .next { right: -25px; }
+  /* Slider - frecce più vicine */
+  .slider .prev { left: 5px; }
+  .slider .next { right: 5px; }
 }
-
-  /* HERO */
-  .hero {
-    padding: 4rem 1.2rem;
-    min-height: auto;
-  }
-
-  .hero-logo {
-    width: 120px;
-    margin-bottom: 1rem;
-  }
-
-  .hero h2 {
-    font-size: 1.6rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .hero .btn {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
-  }
-
-  /* CATEGORIE */
-  .categorie {
-    margin: 1.2rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.6rem;
-  }
-
-  .categorie a {
-    font-size: 0.85rem;
-  }
-
-  /* GRID PRODOTTI */
-  .prodotti .grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  /* SLIDER */
-  .slider {
-    max-width: 90%;
-  }
-
-  .slide img {
-    max-width: 100%;
-  }
-
-  .slider button {
-    font-size: 1.5rem;
-    padding: 0.3rem 0.6rem;
-  }
-
-  /* CONTATTI */
-  .contatti {
-    font-size: 0.9rem;
-  }
-}
-
-
-
-
-
