@@ -122,7 +122,7 @@ header nav a:hover {
 .prodotti, #promo, #novita {
   background: url("pattern2.jpeg") repeat;
   background-size: 300px;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   color: white; /* testo bianco sopra pattern scuro */
   margin: 0;
   background-color: black; /* sfondo nero sotto al pattern */
@@ -390,6 +390,25 @@ footer {
   }
 }
 
+/* ===== Fix categorie distanziate ===== */
+.categoria {
+  margin-bottom: 6rem;
+  padding-bottom: 2rem;
+}
+
+.categoria h3 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* ===== Fix linea bianca tra sezioni con pattern ===== */
+#promo, #novita, .prodotti {
+  margin: 0;
+  padding: 4rem 2rem;
+  background: url("pattern2.jpeg") repeat;
+  background-size: 300px;
+  background-color: black;
+}
 
 
 
