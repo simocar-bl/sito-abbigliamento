@@ -81,11 +81,6 @@ header nav a:hover {
   background: white;         /* sfondo bianco per contrasto */
   padding: 12px;             /* spazio intorno */
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);;
-  
-  border: 3px solid crimson;     /* cornice elegante */
-  border-radius: 20px;           /* arrotonda gli angoli */
-  box-shadow: 0 0 25px rgba(0,0,0,0.6); /* glow scuro per armonizzarlo */
-  padding: 10px; /* distacco dal bordo */
 }
 
 .hero-logo:hover {
@@ -414,6 +409,7 @@ footer {
   background-size: 300px;
   background-color: black;
 }
+
 
 
 
