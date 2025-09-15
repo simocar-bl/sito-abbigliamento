@@ -410,6 +410,23 @@ footer {
   background-color: black;
 }
 
+/* immagini nelle slide */
+.categoria .slider .slide img {
+  width: 200px;        /* larghezza massima */
+  height: auto;        /* mantiene le proporzioni */
+  object-fit: cover;   /* ritaglia se necessario */
+  border-radius: 8px;  /* angoli arrotondati, opzionale */
+  display: block;
+  margin: 0 auto;      /* centrato */
+}
+
+/* per centrare il testo sotto le immagini */
+.categoria .slider .slide {
+  text-align: center;
+  padding: 10px; /* un po’ di spazio */
+}
+
+
 
 
 
